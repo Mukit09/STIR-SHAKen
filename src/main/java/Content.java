@@ -12,8 +12,8 @@ public class Content {
         writePayloadInfo(encodedPayload);
     }
 
-    public void writeHeaderInfo(String encodeHeader) {
-        String header = CommonUtils.getInstance().getDecodedString(encodeHeader);
+    public void writeHeaderInfo(String encodedHeader) {
+        String header = CommonUtils.getInstance().getDecodedString(encodedHeader);
         log.debug("Header: " + header);
         JSONParser parser = new JSONParser();
         try {
